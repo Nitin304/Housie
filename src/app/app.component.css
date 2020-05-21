@@ -1,0 +1,32 @@
+.row{
+    text-align: center;
+}
+.sidePanel{
+    height:80vh;
+    border:1px solid black;
+}
+
+.rightPanel{
+    height:80vh;
+    border:1px solid black;
+}
+.singleBox{
+    height:7.5vh;
+    border:1px solid black;
+    margin:4px 7px 3px 8px;
+}
+.column{
+    width:100%;
+    display:inline-block;
+}
+.gridNumber{
+    margin-top: 8px;
+    /* vertical-align: middle; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.randomNumber{
+    color: #42b32d;
+    font-weight: bolder;
+    font-size: 100px;
+}

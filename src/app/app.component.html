@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+                <h1>Tambola</h1>
+        </div>
+        
+    </div>
+    <div class="row">    
+        <div class="col-2">
+            <div class="sidePanel">
+                <label class="randomNumber">{{randomNumber}}</label><br>
+                <button type="submit" class="btn-primary btn-success" (click)="generateRandomNumber()">Generate Number</button>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="rightPanel container">
+                <div class="box row" *ngFor="let row of maxRows">
+                    <div class="col-1 singleBox" id={{row+j+1}} *ngFor="let item of arrayOne(columnCount);let j=index;">
+                        <div class="gridNumber" >{{row+j+1}}</div>
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
