@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tambola": {
+    "housie": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tambola",
+            "outputPath": "dist/housie",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tambola:build"
+            "browserTarget": "housie:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tambola:build:production"
+              "browserTarget": "housie:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tambola:build"
+            "browserTarget": "housie:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tambola:serve"
+            "devServerTarget": "housie:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tambola:serve:production"
+              "devServerTarget": "housie:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tambola"
+  "defaultProject": "housie"
 }
